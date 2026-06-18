@@ -25,10 +25,10 @@ FetchContent_MakeAvailable(juce)
 juce_add_binary_data(BinaryData
     NAMESPACE BinaryData
     SOURCES
-        # Resources/sfondo1.jpeg
-        Resources/sfondo4.jfif
-        # Resources/sfondo2.jpg
-        Resources/sfondo5.jpeg
+        Resources/sfondo1.jpeg
+       # Resources/sfondo4.jfif
+        Resources/sfondo2.jpg
+       # Resources/sfondo5.jpeg
         Resources/sfondo3.jpeg
 )
 
