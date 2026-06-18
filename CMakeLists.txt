@@ -46,7 +46,7 @@ juce_add_plugin(MicrotonalAutotune
     PLUGIN_CODE Matv
     FORMATS VST3 AU
     # PRODUCT_NAME "Microtonal Autotune"
-    PRODUCT_NAME "Microtonal Autotune Variant"
+    PRODUCT_NAME "Microtonal Autotune"
 )
 
 juce_generate_juce_header(MicrotonalAutotune)
