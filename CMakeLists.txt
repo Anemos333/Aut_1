@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.22)
-project(MicrotonalAutotune VERSION 1.0.0 LANGUAGES C CXX OBJCXX)
+project(MicrotonalAutotune VERSION 1.0.0 LANGUAGES CXX)
+
+if(APPLE)
+    enable_language(OBJCXX)
+endif()
 
 
 set(CMAKE_CXX_STANDARD 17)
