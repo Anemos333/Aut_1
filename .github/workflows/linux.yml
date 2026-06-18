@@ -1,0 +1,66 @@
+name: Build Linux VST3
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-linux-vst3:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            ninja-build \
+            pkg-config \
+            libasound2-dev \
+            libjack-jackd2-dev \
+            libfreetype6-dev \
+            libfontconfig1-dev \
+            libx11-dev \
+            libxext-dev \
+            libxinerama-dev \
+            libxrandr-dev \
+            libxcursor-dev \
+            libxcomposite-dev \
+            libxdamage-dev \
+            libxrender-dev \
+            libwebkit2gtk-4.0-dev \
+            libglu1-mesa-dev \
+            mesa-common-dev
+
+      - name: Configure
+        run: |
+          cmake -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: |
+          cmake --build build --config Release
+
+      - name: Find VST3
+        run: |
+          find build -name "*.vst3" -print
+
+      - name: Package VST3
+        run: |
+          mkdir -p artifacts
+          VST3_PATH=$(find build -name "*.vst3" -type d | head -n 1)
+          echo "Found: $VST3_PATH"
+          cp -R "$VST3_PATH" artifacts/
+          cd artifacts
+          zip -r MicrotonalAutotune-linux-VST3.zip *.vst3
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MicrotonalAutotune-linux-VST3
+          path: artifacts/MicrotonalAutotune-linux-VST3.zip
