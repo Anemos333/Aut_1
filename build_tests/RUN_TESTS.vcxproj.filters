@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gugli\OneDrive\Desktop\Autotune Microtonale\build_tests\CMakeFiles\710e2a8693c6ec0301eea74665dc15dc\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A38E7FFE-D585-32DA-9221-49BFC6DBABBE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

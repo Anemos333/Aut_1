@@ -1,0 +1,16 @@
+test,mode,frequency,inputRms,outputRms,deltaDb,detectedHz,finite,detail
+phase_level,0,98,0.176753,0.176741,-0.000563092,98.7024,1,steady sine
+phase_level,0,164.814,0.176797,0.176785,-0.000575693,164.828,1,steady sine
+phase_level,0,196,0.176781,0.176783,0.0001134,197.009,1,steady sine
+phase_level,0,230,0.176788,0.17678,-0.0003627,230.02,1,steady sine
+phase_level,0,277,0.176786,0.176786,2.95826e-05,277.023,1,steady sine
+phase_level,1,98,0.176753,0.176781,0.0013848,98.7024,1,steady sine
+phase_level,1,164.814,0.176797,0.176777,-0.000991394,164.828,1,steady sine
+phase_level,1,196,0.176781,0.176818,0.00182323,197.009,1,steady sine
+phase_level,1,230,0.176788,0.173144,-0.18089,230.02,1,steady sine
+phase_level,1,277,0.176786,0.176783,-0.000120262,277.023,1,steady sine
+phase_level,2,98,0.176753,0.177645,0.0437383,98.7024,1,steady sine
+phase_level,2,164.814,0.176797,0.176776,-0.00103175,164.828,1,steady sine
+phase_level,2,196,0.176781,0.176313,-0.0230166,197.009,1,steady sine
+phase_level,2,230,0.176788,0.176888,0.00492809,230.02,1,steady sine
+phase_level,2,277,0.176786,0.176781,-0.000232449,277.023,1,steady sine

@@ -1,0 +1,9 @@
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/AutotuneCommercialRegression.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/AutotuneSanitizerSmoke.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/AutotuneCorpusRegression.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/AutotuneBaselineProbe.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/AutotuneLowRegisterProbe.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/AutotuneScaleTempoStrict.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/RUN_TESTS.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/ALL_BUILD.dir
+C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build_tests/CMakeFiles/ZERO_CHECK.dir

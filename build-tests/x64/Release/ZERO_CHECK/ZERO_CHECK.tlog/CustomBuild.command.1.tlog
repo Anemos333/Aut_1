@@ -1,0 +1,10 @@
+^C:\USERS\GUGLI\ONEDRIVE\DESKTOP\AUTOTUNE MICROTONALE\BUILD-TESTS\CMAKEFILES\20FBC48B672A088E59D13AF54C8B672B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/Tests" "-BC:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests/AutotuneStandaloneRegression.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,197 @@
+Start testing: Jun 18 11:53 ora legale Europa occidentale
+----------------------------------------------------------
+1/3 Testing: CommercialRegression
+1/3 Test: CommercialRegression
+Command: "C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests/Release/AutotuneCommercialRegression.exe" "C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests/commercial_regression.csv"
+Directory: C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests
+"CommercialRegression" start time: Jun 18 11:53 ora legale Europa occidentale
+Output:
+----------------------------------------------------------
+[PASS] level/phase mode=0 f=98.000000 delta=-0.000563 dB
+[PASS] level/phase mode=0 f=164.814000 delta=-0.000576 dB
+[PASS] level/phase mode=0 f=196.000000 delta=0.000113 dB
+[PASS] level/phase mode=0 f=230.000000 delta=-0.000363 dB
+[PASS] level/phase mode=0 f=277.000000 delta=0.000030 dB
+[PASS] level/phase mode=1 f=98.000000 delta=0.001385 dB
+[PASS] level/phase mode=1 f=164.814000 delta=-0.000991 dB
+[PASS] level/phase mode=1 f=196.000000 delta=0.001823 dB
+[PASS] level/phase mode=1 f=230.000000 delta=-0.180890 dB
+[PASS] level/phase mode=1 f=277.000000 delta=-0.000120 dB
+[PASS] level/phase mode=2 f=98.000000 delta=0.043738 dB
+[PASS] level/phase mode=2 f=164.814000 delta=-0.001032 dB
+[PASS] level/phase mode=2 f=196.000000 delta=-0.023017 dB
+[PASS] level/phase mode=2 f=230.000000 delta=0.004928 dB
+[PASS] level/phase mode=2 f=277.000000 delta=-0.000232 dB
+[PASS] low register mode=0 45.000000 harmonic cents=0.084514
+[PASS] low register mode=0 45.000000 missing-fundamental cents=0.079355
+[PASS] low register mode=0 55.000000 harmonic cents=0.040037
+[PASS] low register mode=0 55.000000 missing-fundamental cents=0.042307
+[PASS] low register mode=0 65.406000 harmonic cents=0.093900
+[PASS] low register mode=0 65.406000 missing-fundamental cents=0.100710
+[PASS] low register mode=0 73.416000 harmonic cents=0.005366
+[PASS] low register mode=0 73.416000 missing-fundamental cents=0.227961
+[PASS] low register mode=0 82.407000 harmonic cents=0.162325
+[PASS] low register mode=0 82.407000 missing-fundamental cents=0.162325
+[PASS] low register mode=0 98.000000 harmonic cents=5.652774
+[PASS] low register mode=0 98.000000 missing-fundamental cents=1.372084
+[PASS] low register mode=0 110.000000 harmonic cents=0.035394
+[PASS] low register mode=0 110.000000 missing-fundamental cents=0.104012
+[PASS] low register mode=0 130.813000 harmonic cents=0.228240
+[PASS] low register mode=0 130.813000 missing-fundamental cents=0.323985
+[PASS] low register mode=1 45.000000 harmonic cents=0.084514
+[PASS] low register mode=1 45.000000 missing-fundamental cents=0.079355
+[PASS] low register mode=1 55.000000 harmonic cents=0.040037
+[PASS] low register mode=1 55.000000 missing-fundamental cents=0.042307
+[PASS] low register mode=1 65.406000 harmonic cents=0.093900
+[PASS] low register mode=1 65.406000 missing-fundamental cents=0.100710
+[PASS] low register mode=1 73.416000 harmonic cents=0.005366
+[PASS] low register mode=1 73.416000 missing-fundamental cents=0.227961
+[PASS] low register mode=1 82.407000 harmonic cents=0.162325
+[PASS] low register mode=1 82.407000 missing-fundamental cents=0.162325
+[PASS] low register mode=1 98.000000 harmonic cents=5.652774
+[PASS] low register mode=1 98.000000 missing-fundamental cents=1.372084
+[PASS] low register mode=1 110.000000 harmonic cents=0.035394
+[PASS] low register mode=1 110.000000 missing-fundamental cents=0.104012
+[PASS] low register mode=1 130.813000 harmonic cents=0.228240
+[PASS] low register mode=1 130.813000 missing-fundamental cents=0.323985
+[PASS] low register mode=2 45.000000 harmonic cents=0.084514
+[PASS] low register mode=2 45.000000 missing-fundamental cents=0.079355
+[PASS] low register mode=2 55.000000 harmonic cents=0.040037
+[PASS] low register mode=2 55.000000 missing-fundamental cents=0.042307
+[PASS] low register mode=2 65.406000 harmonic cents=0.093900
+[PASS] low register mode=2 65.406000 missing-fundamental cents=0.100710
+[PASS] low register mode=2 73.416000 harmonic cents=0.005366
+[PASS] low register mode=2 73.416000 missing-fundamental cents=0.227961
+[PASS] low register mode=2 82.407000 harmonic cents=0.162325
+[PASS] low register mode=2 82.407000 missing-fundamental cents=0.162325
+[PASS] low register mode=2 98.000000 harmonic cents=5.652774
+[PASS] low register mode=2 98.000000 missing-fundamental cents=1.372084
+[PASS] low register mode=2 110.000000 harmonic cents=0.035394
+[PASS] low register mode=2 110.000000 missing-fundamental cents=0.104012
+[PASS] low register mode=2 130.813000 harmonic cents=0.228240
+[PASS] low register mode=2 130.813000 missing-fundamental cents=0.323985
+[PASS] subharmonic safety mode=0 f=55.000000 cents=7.676771 confidence=0.685251 wet=0.012092
+[PASS] subharmonic safety mode=0 f=73.416000 cents=0.703610 confidence=0.742895 wet=0.000000
+[PASS] subharmonic safety mode=0 f=82.407000 cents=0.732801 confidence=0.726263 wet=0.000523
+[PASS] subharmonic safety mode=0 f=98.000000 cents=6.643995 confidence=0.706985 wet=0.206769
+[PASS] subharmonic safety mode=1 f=55.000000 cents=7.676771 confidence=0.685251 wet=0.006181
+[PASS] subharmonic safety mode=1 f=73.416000 cents=0.703610 confidence=0.742895 wet=0.000000
+[PASS] subharmonic safety mode=1 f=82.407000 cents=0.732801 confidence=0.726263 wet=0.000116
+[PASS] subharmonic safety mode=1 f=98.000000 cents=6.643995 confidence=0.706985 wet=0.219932
+[PASS] subharmonic safety mode=2 f=55.000000 cents=7.676771 confidence=0.685251 wet=0.004813
+[PASS] subharmonic safety mode=2 f=73.416000 cents=0.703610 confidence=0.742895 wet=0.000000
+[PASS] subharmonic safety mode=2 f=82.407000 cents=0.732801 confidence=0.726263 wet=0.000066
+[PASS] subharmonic safety mode=2 f=98.000000 cents=6.643995 confidence=0.706985 wet=0.215130
+[PASS] Amount 0 stereo mode=0 maxError=0.000029
+[PASS] Amount 0 stereo mode=1 maxError=0.000000
+[PASS] Amount 0 stereo mode=2 maxError=0.000000
+[PASS] block invariance size=1
+[PASS] block invariance size=2
+[PASS] block invariance size=3
+[PASS] block invariance size=7
+[PASS] block invariance size=31
+[PASS] block invariance size=64
+[PASS] block invariance size=127
+[PASS] block invariance size=257
+[PASS] block invariance size=512
+[PASS] block invariance size=1024
+[PASS] block invariance size=4096
+[PASS] finite sample-rate=22050.000000
+[PASS] finite sample-rate=32000.000000
+[PASS] finite sample-rate=44100.000000
+[PASS] finite sample-rate=48000.000000
+[PASS] finite sample-rate=88200.000000
+[PASS] finite sample-rate=96000.000000
+[PASS] finite sample-rate=176400.000000
+[PASS] finite sample-rate=192000.000000
+[PASS] non-finite/full-scale recovery mode=0
+[PASS] non-finite/full-scale recovery mode=1
+[PASS] non-finite/full-scale recovery mode=2
+[PASS] deterministic reset
+[PASS] 100000 parameter combinations: zero audio-thread allocations
+[PASS] 100000 parameter combinations: finite output
+[PASS] 1000 mode changes: zero audio-thread allocations
+[PASS] 1000 mode changes: finite output
+All commercial regression tests passed.
+<end of output>
+Test time =  20.89 sec
+----------------------------------------------------------
+Test Passed.
+"CommercialRegression" end time: Jun 18 11:53 ora legale Europa occidentale
+"CommercialRegression" time elapsed: 00:00:20
+----------------------------------------------------------
+
+2/3 Testing: SanitizerSmoke
+2/3 Test: SanitizerSmoke
+Command: "C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests/Release/AutotuneSanitizerSmoke.exe"
+Directory: C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests
+"SanitizerSmoke" start time: Jun 18 11:53 ora legale Europa occidentale
+Output:
+----------------------------------------------------------
+Sanitizer smoke passed.
+<end of output>
+Test time =   0.60 sec
+----------------------------------------------------------
+Test Passed.
+"SanitizerSmoke" end time: Jun 18 11:53 ora legale Europa occidentale
+"SanitizerSmoke" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: CorpusRegression
+3/3 Test: CorpusRegression
+Command: "C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests/Release/AutotuneCorpusRegression.exe" "C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests/corpus_regression.csv" "C:/Users/gugli/Downloads/Voices/._LEAD VOX - U48 - Neve 33102.wav" "C:/Users/gugli/Downloads/Voices/02_LeadVox1.wav" "C:/Users/gugli/Downloads/Voices/03_LeadVox2.wav" "C:/Users/gugli/Downloads/Voices/04_BackingVox1.wav" "C:/Users/gugli/Downloads/Voices/05_BackingVox2.wav" "C:/Users/gugli/Downloads/Voices/06_BackingVox3.wav" "C:/Users/gugli/Downloads/Voices/07_BackingVox4.wav" "C:/Users/gugli/Downloads/Voices/09_LeadVox.wav" "C:/Users/gugli/Downloads/Voices/10_LeadVox.wav" "C:/Users/gugli/Downloads/Voices/11_LeadVox.wav" "C:/Users/gugli/Downloads/Voices/11_LeadVoxVs1.wav" "C:/Users/gugli/Downloads/Voices/12_LeadVoxVs1DT.wav" "C:/Users/gugli/Downloads/Voices/13_LeadVoxCh1a.wav" "C:/Users/gugli/Downloads/Voices/14_LeadVoxCh1b.wav" "C:/Users/gugli/Downloads/Voices/15_ElectroChoir.wav" "C:/Users/gugli/Downloads/Voices/15_LeadVoxCh2a.wav" "C:/Users/gugli/Downloads/Voices/16_LeadVox.wav" "C:/Users/gugli/Downloads/Voices/16_LeadVoxCh2b.wav" "C:/Users/gugli/Downloads/Voices/17_BackingVox.wav" "C:/Users/gugli/Downloads/Voices/17_LeadVoxCh3.wav" "C:/Users/gugli/Downloads/Voices/18_LeadVoxCh4.wav" "C:/Users/gugli/Downloads/Voices/19_LeadVox.wav" "C:/Users/gugli/Downloads/Voices/20_BackingVox.wav" "C:/Users/gugli/Downloads/Voices/20_LeadVoxDT1.wav" "C:/Users/gugli/Downloads/Voices/21_LeadVoxDT2.wav" "C:/Users/gugli/Downloads/Voices/22_BackingVox1.wav" "C:/Users/gugli/Downloads/Voices/23_BackingVox1DT.wav" "C:/Users/gugli/Downloads/Voices/24_BackingVox2.wav" "C:/Users/gugli/Downloads/Voices/29_LeadVox2.wav" "C:/Users/gugli/Downloads/Voices/30_LeadVox3.wav" "C:/Users/gugli/Downloads/Voices/31_LeadVox.wav" "C:/Users/gugli/Downloads/Voices/31_LeadVoxDT.wav" "C:/Users/gugli/Downloads/Voices/32_BackingVox1.wav" "C:/Users/gugli/Downloads/Voices/33_BackingVox1DT.wav" "C:/Users/gugli/Downloads/Voices/34_BackingVox2.wav" "C:/Users/gugli/Downloads/Voices/35_BackingVox2DT.wav" "C:/Users/gugli/Downloads/Voices/BR - VOX-M80 purple.wav" "C:/Users/gugli/Downloads/Voices/Vocals-BG-M81.wav" "C:/Users/gugli/Downloads/Voices/Vocals-BG2-M81.wav" "C:/Users/gugli/Downloads/Voices/Vocals-Erica-M80.wav" "C:/Users/gugli/Downloads/Voices/Vocals-Nick-M81.wav"
+Directory: C:/Users/gugli/OneDrive/Desktop/Autotune Microtonale/build-tests
+"CorpusRegression" start time: Jun 18 11:53 ora legale Europa occidentale
+Output:
+----------------------------------------------------------
+SKIP C:/Users/gugli/Downloads/Voices/._LEAD VOX - U48 - Neve 33102.wav
+02_LeadVox1.wav complete
+03_LeadVox2.wav complete
+04_BackingVox1.wav complete
+05_BackingVox2.wav complete
+06_BackingVox3.wav complete
+07_BackingVox4.wav complete
+09_LeadVox.wav complete
+10_LeadVox.wav complete
+11_LeadVox.wav complete
+11_LeadVoxVs1.wav complete
+12_LeadVoxVs1DT.wav complete
+13_LeadVoxCh1a.wav complete
+14_LeadVoxCh1b.wav complete
+15_ElectroChoir.wav complete
+15_LeadVoxCh2a.wav complete
+16_LeadVox.wav complete
+16_LeadVoxCh2b.wav complete
+17_BackingVox.wav complete
+17_LeadVoxCh3.wav complete
+18_LeadVoxCh4.wav complete
+19_LeadVox.wav complete
+20_BackingVox.wav complete
+20_LeadVoxDT1.wav complete
+21_LeadVoxDT2.wav complete
+22_BackingVox1.wav complete
+23_BackingVox1DT.wav complete
+24_BackingVox2.wav complete
+29_LeadVox2.wav complete
+30_LeadVox3.wav complete
+31_LeadVox.wav complete
+31_LeadVoxDT.wav complete
+32_BackingVox1.wav complete
+33_BackingVox1DT.wav complete
+34_BackingVox2.wav complete
+35_BackingVox2DT.wav complete
+BR - VOX-M80 purple.wav complete
+Vocals-BG-M81.wav complete
+Vocals-BG2-M81.wav complete
+Vocals-Erica-M80.wav complete
+Vocals-Nick-M81.wav complete
+rows=160
+<end of output>
+Test time =  15.35 sec
+----------------------------------------------------------
+Test Passed.
+"CorpusRegression" end time: Jun 18 11:54 ora legale Europa occidentale
+"CorpusRegression" time elapsed: 00:00:15
+----------------------------------------------------------
+
+End testing: Jun 18 11:54 ora legale Europa occidentale
