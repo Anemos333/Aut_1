@@ -11,13 +11,13 @@ MicrotonalAutotuneAudioProcessorEditor::MicrotonalAutotuneAudioProcessorEditor (
 {
     // Load background images from BinaryData
      bgImage = juce::ImageCache::getFromMemory (BinaryData::sfondo1_jpeg,
-    //                                             BinaryData::sfondo1_jpegSize);
+                                             BinaryData::sfondo1_jpegSize);
     //bgImage = juce::ImageCache::getFromMemory (BinaryData::sfondo4_jfif,
-                                                BinaryData::sfondo4_jfifSize);
+                                                //BinaryData::sfondo4_jfifSize);
      bgImageScaleEditor = juce::ImageCache::getFromMemory (BinaryData::sfondo2_jpg,
-    //                                                        BinaryData::sfondo2_jpgSize);
+                                                           BinaryData::sfondo2_jpgSize);
     //bgImageScaleEditor = juce::ImageCache::getFromMemory (BinaryData::sfondo5_jpeg,
-                                                           BinaryData::sfondo5_jpegSize);
+                                                           //BinaryData::sfondo5_jpegSize);
 
     // ==================== Scale Selector ====================
     scaleSelectorLabel.setText ("Scala:", juce::dontSendNotification);
