@@ -40,6 +40,9 @@ private:
     juce::Slider amountKnob;
     juce::Label  amountLabel;
     std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> amountAttachment;
+    juce::Slider humanizeSlider;
+    juce::Label  humanizeLabel;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> humanizeAttachment;
 
     // Custom scale editor (shown/hidden)
     std::unique_ptr<CustomScaleEditor> customScaleEditorPage;
