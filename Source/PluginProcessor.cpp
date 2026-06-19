@@ -27,6 +27,10 @@ juce::AudioProcessorValueTreeState::ParameterLayout MicrotonalAutotuneAudioProce
     params.push_back (std::make_unique<juce::AudioParameterFloat> (
         juce::ParameterID { "amount", 1 }, "Amount",
         juce::NormalisableRange<float> (0.0f, 100.0f, 0.1f), 100.0f));
+    params.push_back (std::make_unique<juce::AudioParameterFloat> (
+        juce::ParameterID { "humanize", 1 }, "Humanize",
+        juce::NormalisableRange<float> (0.0f, 100.0f, 0.1f), 20.0f));
+
 
     params.push_back (std::make_unique<juce::AudioParameterChoice> (
         juce::ParameterID { "tempoMode", 1 }, "Creative Tempo Mode",
