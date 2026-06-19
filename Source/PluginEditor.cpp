@@ -114,6 +114,32 @@ MicrotonalAutotuneAudioProcessorEditor::MicrotonalAutotuneAudioProcessorEditor (
 
     amountAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment> (
         processorRef.getAPVTS(), "amount", amountKnob);
+    // ==================== Humanize Slider ====================
+    humanizeSlider.setSliderStyle (juce::Slider::LinearHorizontal);
+    humanizeSlider.setTextBoxStyle (juce::Slider::TextBoxRight, false, 60, 20);
+    humanizeSlider.setTextValueSuffix (" %");
+    humanizeSlider.setColour (juce::Slider::trackColourId, juce::Colour (0xFF00C878));
+    humanizeSlider.setColour (juce::Slider::thumbColourId, juce::Colours::white);
+    humanizeSlider.textFromValueFunction = [](double val)
+    {
+        juce::String text (val, 1);
+        if (val < 5.0)
+            return text + " % (Robot)";
+        else if (val > 95.0)
+            return text + " % (Human)";
+        return text + " %";
+    };
+    addAndMakeVisible (humanizeSlider);
+
+    humanizeLabel.setText ("Humanize", juce::dontSendNotification);
+    humanizeLabel.setFont (juce::FontOptions (14.0f, juce::Font::bold));
+    humanizeLabel.setColour (juce::Label::textColourId, juce::Colours::white);
+    humanizeLabel.setJustificationType (juce::Justification::centredLeft);
+    addAndMakeVisible (humanizeLabel);
+
+    humanizeAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment> (
+        processorRef.getAPVTS(), "humanize", humanizeSlider);
+
 
     // ==================== Creative Tempo page ====================
     tempoPageButton.onClick = [this]() { showTempoPage(); };
