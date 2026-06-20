@@ -128,14 +128,16 @@ public:
                  const std::vector<double>& scaleRatios,
                  double rootFrequency,
                  float speedMs,
-                 float amount)
+                 float amount,
+                 float humanize)
     {
         process(buffer,
                 scaleRatios.empty() ? nullptr : scaleRatios.data(),
                 static_cast<int>(scaleRatios.size()),
                 rootFrequency,
                 speedMs,
-                amount);
+                amount,
+                humanize);
     }
 
     void process(float* data,
@@ -143,12 +145,14 @@ public:
                  const std::vector<double>& scaleRatios,
                  double rootFrequency,
                  float speedMs,
-                 float amount)
+                 float amount,
+                 float humanize)
     {
         if (data == nullptr || numberOfSamples <= 0)
             return;
         parameters_.retuneTimeMs = speedMs;
         parameters_.amount = amount;
+        parameters_.humanize = std::clamp(humanize,0.0f,1.0f);
         float* channels[] { data };
         juce::AudioBuffer<float> view(channels, 1, numberOfSamples);
         activeEngine().process(view,
