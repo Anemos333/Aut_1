@@ -253,6 +253,10 @@ void MicrotonalAutotuneAudioProcessorEditor::setMainControlsVisible(
     modeSelector.setVisible (shouldBeVisible);
     modeSelectorLabel.setVisible (shouldBeVisible);
     tempoPageButton.setVisible (shouldBeVisible);
+    humanizeSlider.setVisible (shouldBeVisible);
+    humanizeLabel.setVisible (shouldBeVisible);
+    
+
 }
 
 void MicrotonalAutotuneAudioProcessorEditor::setTempoControlsVisible(
@@ -860,6 +864,10 @@ void MicrotonalAutotuneAudioProcessorEditor::resized()
                           knobSize, knobSize);
     amountLabel.setBounds (amountCenterX - knobSize / 2, knobCenterY + knobSize / 2 + 4,
                            knobSize, 20);
+    // humanize
+    int humanizeY = knobCenterY + knobSize / 2 + 38;
+    humanizeLabel.setBounds (width / 2 - 170, humanizeY, 90, 24);
+    humanizeSlider.setBounds (width / 2 - 70, humanizeY, 220, 24);
 }
 
 void MicrotonalAutotuneAudioProcessorEditor::onRootNoteSelected()
