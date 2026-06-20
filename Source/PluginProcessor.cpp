@@ -50,8 +50,6 @@ juce::AudioProcessorValueTreeState::ParameterLayout MicrotonalAutotuneAudioProce
 
     params.push_back (std::make_unique<juce::AudioParameterBool> (
         juce::ParameterID { "tempoSmartOnset", 1 }, "Smart Onset", true));
-
-    return { params.begin(), params.end() };
     params.push_back (std::make_unique<juce::AudioParameterChoice> (
     juce::ParameterID { "scaleIndex", 1 },
     "Scale",
@@ -97,6 +95,9 @@ params.push_back (std::make_unique<juce::AudioParameterChoice> (
     },
     9));
 }
+
+    return { params.begin(), params.end() };
+   
 
 //==============================================================================
 const juce::String MicrotonalAutotuneAudioProcessor::getName() const { return "Microtonal Autotune"; }
