@@ -573,7 +573,8 @@ const float humanize = humanizePct / 100.0f;
                                     scaleSnapshot.count,
                                     scaleSnapshot.rootFrequency,
                                     speedMs,
-                                    amount);
+                                    amount,
+                                    humanize);
         releaseScaleSnapshot (snapshotIndex);
         return;
     }
