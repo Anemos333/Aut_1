@@ -537,7 +537,12 @@ void MicrotonalAutotuneAudioProcessor::processBlock (juce::AudioBuffer<float>& b
     speedMs = std::isfinite (speedMs) ? juce::jlimit (0.0f, 500.0f, speedMs) : 50.0f;
     amountPct = std::isfinite (amountPct) ? juce::jlimit (0.0f, 100.0f, amountPct) : 0.0f;
     const float amount = amountPct / 100.0f;
+    float humanizePct = apvts.getRawParameterValue ("humanize")->load();
+    humanizePct = std::isfinite (humanizePct)
+    ? juce::jlimit (0.0f, 100.0f, humanizePct)
+    : 20.0f;
 
+const float humanize = humanizePct / 100.0f;
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         float* data = buffer.getWritePointer (channel);
