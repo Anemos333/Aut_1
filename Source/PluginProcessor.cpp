@@ -54,52 +54,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout MicrotonalAutotuneAudioProce
     1));
     params.push_back (std::make_unique<juce::AudioParameterBool> (
         juce::ParameterID { "tempoSmartOnset", 1 }, "Smart Onset", true));
-    params.push_back (std::make_unique<juce::AudioParameterChoice> (
-    juce::ParameterID { "scaleIndex", 1 },
-    "Scale",
-    juce::StringArray {
-        "Cromatica",
-        "Maggiore (Ionica)",
-        "Dorica",
-        "Frigia",
-        "Lidia",
-        "Misolidia",
-        "Minore naturale (Eolia)",
-        "Locria",
-        "Minore melodica",
-        "Minore armonica",
-        "Pentatonica maggiore",
-        "Pentatonica minore",
-        "24 EDO",
-        "19 EDO",
-        "31 EDO",
-        "Pitagorica",
-        "Tolemaica (Just Intonation)",
-        "Bizantina - Modo I",
-        "Bizantina - Modo II",
-        "Bizantina - Modo III",
-        "Maqam Rast",
-        "Maqam Bayati",
-        "Maqam Saba",
-        "Maqam Hijaz",
-        "Maqam Nahawand",
-        "Maqam Ajam",
-        "Maqam Kurd",
-        "Slendro",
-        "Pelog"
-    },
-    1));
-
-params.push_back (std::make_unique<juce::AudioParameterChoice> (
-    juce::ParameterID { "rootNoteIndex", 1 },
-    "Root Note",
-    juce::StringArray {
-        "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
-        "Ni", "Pa", "Vu", "Ga", "Di", "Ke", "Zo"
-    },
-    9));
-
-
+    
     return { params.begin(), params.end() };
 }
    
@@ -588,26 +543,7 @@ void MicrotonalAutotuneAudioProcessor::processBlock (juce::AudioBuffer<float>& b
     speedMs = std::isfinite (speedMs) ? juce::jlimit (0.0f, 500.0f, speedMs) : 50.0f;
     amountPct = std::isfinite (amountPct) ? juce::jlimit (0.0f, 100.0f, amountPct) : 0.0f;
     const float amount = amountPct / 100.0f;
-    const int newScaleIndex = juce::jlimit (
-    0,
-    ScaleDefinitions::getScaleCount() - 1,
-    static_cast<int> (std::lround (
-        apvts.getRawParameterValue ("scaleIndex")->load())));
-
-const int newRootNoteIndex = juce::jlimit (
-    0,
-    18,
-    static_cast<int> (std::lround (
-        apvts.getRawParameterValue ("rootNoteIndex")->load())));
-
-if (newScaleIndex != currentScaleIndex.load()
-    || newRootNoteIndex != rootNoteIndex.load())
-{
-    currentScaleIndex.store (newScaleIndex, std::memory_order_release);
-    rootNoteIndex.store (newRootNoteIndex, std::memory_order_release);
-    activeCustomPresetIndex.store (-1, std::memory_order_release);
-    refreshScaleSnapshot();
-}
+    
     float humanizePct = apvts.getRawParameterValue ("humanize")->load();
     humanizePct = std::isfinite (humanizePct)
     ? juce::jlimit (0.0f, 100.0f, humanizePct)
