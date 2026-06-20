@@ -47,7 +47,11 @@ juce::AudioProcessorValueTreeState::ParameterLayout MicrotonalAutotuneAudioProce
     params.push_back (std::make_unique<juce::AudioParameterFloat> (
         juce::ParameterID { "tempoLockStrength", 1 }, "Glide Lock Strength",
         juce::NormalisableRange<float> (0.0f, 100.0f, 1.0f), 100.0f));
-
+    params.push_back (std::make_unique<juce::AudioParameterChoice> (
+    juce::ParameterID { "processingMode", 1 },
+    "Processing Mode",
+    juce::StringArray { "Slow", "Quality", "Live", "UltraLive" },
+    1));
     params.push_back (std::make_unique<juce::AudioParameterBool> (
         juce::ParameterID { "tempoSmartOnset", 1 }, "Smart Onset", true));
     params.push_back (std::make_unique<juce::AudioParameterChoice> (
@@ -94,9 +98,10 @@ params.push_back (std::make_unique<juce::AudioParameterChoice> (
         "Ni", "Pa", "Vu", "Ga", "Di", "Ke", "Zo"
     },
     9));
-}
+
 
     return { params.begin(), params.end() };
+}
    
 
 //==============================================================================
