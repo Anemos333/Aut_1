@@ -109,10 +109,12 @@ public:
                  int numberOfScaleRatios,
                  double rootFrequency,
                  float speedMs,
-                 float amount)
+                 float amount,
+                 float humanize)
     {
         parameters_.retuneTimeMs = speedMs;
         parameters_.amount = amount;
+        parameters_.humanize = humanize;
         auto& engine = activeEngine();
         engine.process(buffer,
                        scaleRatios,
