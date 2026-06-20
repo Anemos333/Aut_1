@@ -865,9 +865,25 @@ void MicrotonalAutotuneAudioProcessorEditor::resized()
     amountLabel.setBounds (amountCenterX - knobSize / 2, knobCenterY + knobSize / 2 + 4,
                            knobSize, 20);
     // humanize
-    int humanizeY = knobCenterY + knobSize / 2 + 38;
-    humanizeLabel.setBounds (width / 2 - 170, humanizeY, 90, 24);
-    humanizeSlider.setBounds (width / 2 - 70, humanizeY, 220, 24);
+    // Humanize slider: same width as meter panel, just above it
+auto meterLayoutArea = getLocalBounds();
+meterLayoutArea.removeFromBottom (38); // title area, same as paint()
+
+auto meterArea = meterLayoutArea.removeFromBottom (136).reduced (18, 4);
+
+constexpr int humanizeHeight = 24;
+constexpr int humanizeGap = 6;
+
+auto humanizeArea = meterArea
+    .withY (meterArea.getY() - humanizeHeight - humanizeGap)
+    .withHeight (humanizeHeight);
+
+// Label + slider inside the same total width as the meter box
+auto labelArea = humanizeArea.removeFromLeft (90);
+humanizeArea.removeFromLeft (8);
+
+humanizeLabel.setBounds (labelArea);
+humanizeSlider.setBounds (humanizeArea);
 }
 
 void MicrotonalAutotuneAudioProcessorEditor::onRootNoteSelected()
