@@ -52,6 +52,7 @@ juce_add_plugin(MicrotonalAutotune
     COPY_PLUGIN_AFTER_BUILD TRUE
     PLUGIN_MANUFACTURER_CODE Mtal
     # PLUGIN_CODE Matc
+    PRODUCT_STATUS COMMERCIAL
     PLUGIN_CODE Matv
     FORMATS VST3 AU
     # PRODUCT_NAME "Microtonal Autotune"
